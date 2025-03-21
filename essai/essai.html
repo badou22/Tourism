@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tourisme au Sénégal</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/15/Flag_of_Senegal.svg">
+        
+        <style>
+            /* Styles Généraux */
+            body {
+                font-family: 'Pacifico', cursive;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 40px;
+                padding: 10px;
+                margin: 40px 0 10px;
+                text-align: center;
+            }
+            
+            header {
+                font-size: 60px;
+                color: cornflowerblue;
+                text-shadow: 0 0 4px black;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            /* Section Bienvenue */
+            #bienvenue {
+                background-image: url("https://source.unsplash.com/1600x900/?sunset,beach");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 1000px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            #slogan {
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Flexbox Ville */
+            #flexbox-ville {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                padding: 20px;
+            }
+            .ville {
+                width: 100%;
+                background-size: cover;
+                height: 100%;
+                min-height: 400px;
+                border: 3px solid white;
+                transition: all 0.2s;
+                border-radius: 30px;
+                font-size: 40px;
+                color: bisque;
+                text-shadow: 0 0 30px brown;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 400px burlywood;
+                text-decoration: none;
+            }
+            .ville:hover {
+                border: 8px solid #76CDCD;
+            }
+            
+            /* Destinations */
+            #goree { background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/%C3%8Ele_de_Gor%C3%A9e_-_Maison_des_Esclaves.jpg"); }
+            #saly { background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4a/Saly_Portudal_Senegal.jpg"); }
+            #toubacouta { background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1d/Toubacouta_Senegal.jpg"); }
+            #joal { background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5b/Joal_Fadiout.jpg"); }
+            #ndayane { background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0b/Ndayane_Senegal.jpg"); }
+            #casa { background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Casamance_Senegal.jpg"); }
+            #lac_rose { background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2f/Lac_Retba.jpg"); }
+            #djoudj { background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/95/Djoudj_National_Bird_Sanctuary.jpg"); }
+            #bandia { background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/R%C3%A9serve_de_Bandia_Senegal.jpg"); }
+            
+            /* Footer */
+            footer {
+                background-color: #36494E;
+                background-image: url("https://img.freepik.com/vecteurs-libre/vecteur-fond-sans-soudure-3d-floral-pour-decoration-cartes-noel-invitation_1284-41314.jpg");
+                background-size: 100px;
+                background-repeat: repeat-x;
+                height: 100px;
+                padding: 15px;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            footer img {
+                width: 70px;
+            }
+            
+            /* Responsive */
+            @media all and (max-width: 1350px) {
+                #flexbox-ville {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            @media all and (max-width: 800px) {
+                #flexbox-ville {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            Destination Touristique
+            <span id="slogan">Découvrez la beauté naturelle et culturelle du Sénégal.</span>
+        </header>
+        
+        <section id="bienvenue"></section>
+        
+        <h1>Nos meilleures destinations</h1>
+        <p style="text-align: center;">
+            Explorez nos destinations les plus visitées et laissez-vous inspirer par des expériences uniques – cliquez ici pour découvrir celles qui font rêver nos voyageurs ! 🌍
+        </p>
+        
+        <section id="flexbox-ville">
+            <a href="" id="goree" class="ville">Île de Gorée</a>
+            <a href="" id="saly" class="ville">Saly Portudal</a>
+            <a href="" id="toubacouta" class="ville">Reposoir des Oiseaux</a>
+            <a href="" id="joal" class="ville">Nianing</a>
+            <a href="" id="ndayane" class="ville">Huttes de Ndayane</a>
+            <a href="" id="casa" class="ville">Petite Côte</a>
+            <a href="" id="lac_rose" class="ville">Lac Rose</a>
+            <a href="" id="djoudj" class="ville">Parc National du Djoudj</a>
+            <a href="" id="bandia" class="ville">Réserve de Bandia</a>
+        </section>
+        
+        <footer>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Flag_of_Senegal.svg" alt="Sénégal">
+                2025 © Destination Touristique
+            </div>
+            <nav>
+                <ul style="display: flex; gap: 15px; list-style: none; padding: 0;">
+                    <li><a href="index.html" style="color: #76CDCD; text-decoration: none;">Accueil</a></li>
+                    <li><a href="a_propos.html" style="color: #76CDCD; text-decoration: none;">À propos</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
